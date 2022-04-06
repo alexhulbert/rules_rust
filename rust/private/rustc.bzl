@@ -86,6 +86,7 @@ def _get_rustc_env(attr, toolchain):
         "CARGO_PKG_VERSION_MINOR": minor,
         "CARGO_PKG_VERSION_PATCH": patch,
         "CARGO_PKG_VERSION_PRE": pre,
+        "LD_LIBRARY_PATH": "/usr/lib",
     }
 
 def get_compilation_mode_opts(ctx, toolchain):
